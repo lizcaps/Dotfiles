@@ -1,0 +1,18 @@
+# Desktop services autostart
+
+# Starts the system bar
+bar {
+	swaybar_command waybar
+}
+
+# Mako notification daemon
+exec mako
+
+# Background renderer
+#exec swaybg -m fill -o HDMI-A-1 -i ~/.HDMI-A-1.wallpaper -o DVI-I-1 -i ~/.DVI-I-1.wallpaper
+
+# Screen sleep and autolock
+#exec swayidle -w timeout 300 'swaymsg "output * dpms off"' timeout 400 'swaylock -f -c 282828' \
+#	resume 'swaymsg "output * dpms on"' before-sleep 'swaylock -f -c 282828' lock 'swaylock -f -c 282828'
+# WARNING: Erratic behaviour with dpms on amd radeon r9 2xx gpus. Locks the screen, without powering down monitors.
+#exec swayidle -w timeout 1200 '~/.config/swaylock/swaylock.sh' before-sleep '~/.config/swaylock/swaylock.sh' lock '~/.config/swaylock/swaylock.sh'

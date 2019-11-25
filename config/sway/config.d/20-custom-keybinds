@@ -1,0 +1,20 @@
+# Custom keybindings config for sway
+
+
+# Keybinds to control volume
+# It is configured to issue commands to pulseaudio server, through pactl
+#
+# # Increases the volume
+# bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
+#
+# # Decreases the volume
+# bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
+#
+# # Toggles the audio
+# bindsym XF86AudioMute        exec --no-startup-id pactl set-sink-mute 0 toggle
+
+# Keybind to take a screenshot of every screen 
+bindsym $mod+Print exec grim "/home/foxubuntu/Pictures/Screenshot_$(date +%Y-%m-%d_%H-%M-%S_%N).png"
+
+# Keybind to take a screenshot of a portion of the screen (interactive selection)
+bindsym $mod+Shift+Print exec grim -g "$(slurp)" "/home/foxubuntu/Pictures/Screenshot_$(date +%Y-%m-%d_%H-%M-%S_%N).png"

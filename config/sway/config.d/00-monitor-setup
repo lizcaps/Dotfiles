@@ -1,0 +1,17 @@
+# Monitor setup
+
+#
+# Sets the default monitor orientation and position.
+# This type of configuration is acceptable for a static context. For a laptop that is supposed to connect to different
+# monitors it is best to create a script that recognises more precisely every monitor.
+
+## Horizontal central monitor
+#output DVI-I-1 scale 1
+#output DVI-I-1 mode 1920x1080
+#output DVI-I-1 pos 1080 520
+#
+## Vertical left monitor
+#output HDMI-A-1 scale 1
+#output HDMI-A-1 mode 1920x1080
+#output HDMI-A-1 transform 270
+#output HDMI-A-1 pos 0 0

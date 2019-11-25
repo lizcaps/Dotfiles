@@ -1,0 +1,10 @@
+# Custom rules for windows
+
+#
+# Makes cheeselouis floating, small and at the bottom of the screen
+#
+for_window [title="CheeseLouis_Launcher"] {
+	focus
+	floating enable
+	resize set 400 250 px
+}
